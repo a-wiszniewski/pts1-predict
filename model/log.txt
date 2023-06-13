@@ -1,0 +1,17 @@
+test_size=0.2
+random_state=101
+start=-20
+stop=None
+encoding=blosum62
+n_estimators=1000
+class_weight=balanced
+
+--------------- classification report ---------------
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      1255
+           1       0.84      0.82      0.83        51
+
+    accuracy                           0.99      1306
+   macro avg       0.92      0.91      0.91      1306
+weighted avg       0.99      0.99      0.99      1306
