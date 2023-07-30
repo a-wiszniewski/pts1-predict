@@ -7,7 +7,7 @@ This is a Streamlit app and command line interface (CLI) that predicts the prese
 1. Clone the repository:
 
    ```shell
-   git clone <repository-url>
+   git clone https://github.com/a-wiszniewski/pts1-predict.git
    ```
 
 2. Install the required dependencies:
@@ -35,9 +35,9 @@ python cli.py input_dir [--model MODEL] [--output OUTPUT] [--filter FILTER]
 ```
 
 - `input_dir` (required): Path to the input directory containing FASTA files.
-- `--model MODEL` (optional): Path to the model file (default: `model/model.pkl`).
-- `--output OUTPUT` (optional): Output filename (default: `output.csv`).
-- `--filter FILTER` (optional): Filter sequences predicted to not contain a PTS1 (Y/n) (default: Y).
+- `-m MODEL`, `--model MODEL` (optional): Path to the model file (default: `model/model.pkl`).
+- `-o OUTPUT`, `--output OUTPUT` (optional): Output filename (default: `output.csv`).
+- `-f FILTER`, `--filter FILTER` (optional): Filter sequences predicted to not contain a PTS1 (Y/n) (default: Y).
 
 ## App Functionality
 

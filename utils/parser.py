@@ -23,7 +23,7 @@ def read_fasta(file_or_string):
     try:
         with open(file_or_string, 'r') as fasta_file:
             fasta = fasta_file.readlines()
-    except FileNotFoundError:
+    except:
         fasta = file_or_string.splitlines()
 
     sequences = parse_fasta(fasta)

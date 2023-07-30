@@ -10,9 +10,9 @@ def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Predict PTS1 peroxisomal targeting sequences in FASTA files')
     parser.add_argument('input_dir', type=str, help='Path to input directory containing FASTA files')
-    parser.add_argument('--model', type=str, default='model/model.pkl', help='Path to model file (default: model/model.pkl)')
-    parser.add_argument('--output', type=str, default='output.csv', help='Output filename (default: output.csv)')
-    parser.add_argument('--filter', type=str, help='Filter sequences predicted to not contain a PTS1 (Y/n)', default='Y')
+    parser.add_argument('-m','--model', type=str, default='model/model.pkl', help='Path to model file (default: model/model.pkl)')
+    parser.add_argument('-o','--output', type=str, default='output.csv', help='Output filename (default: output.csv)')
+    parser.add_argument('-f','--filter', type=str, help='Filter sequences predicted to not contain a PTS1 (Y/n)', default='Y')
     args = parser.parse_args()
 
     filter_sequence = args.filter.lower() in ['y', 'yes']
